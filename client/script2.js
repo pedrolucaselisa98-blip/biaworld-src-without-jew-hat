@@ -901,12 +901,6 @@ BonziCOINS Menu `,`
                                 }
                             },
                             {
-                                type: 0,
-                                name: "Notice Bulge",
-                                callback: (passthrough)=>{
-                                    socket.emit("command", {command: "owo", param: passthrough.pub.name})
-                                }
-                            },
                         ]
                     }
                 ]
