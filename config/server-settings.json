@@ -1,8 +1,8 @@
 {
 	"port": 3000,
-	"godword": "ohmygodseamussucksass299399393934882",
-	"kingwords": ["nobodylikesdiogo"],
-	"lowkingwords": ["ohmygodifyouleakthisshitthesitewillbeshutdown"],
+	"godword": "",
+	"kingwords": [""],
+	"lowkingwords": [""],
 	"defname": "User",
 	"maxname": 45,
 	"maxmessage": 3000,
