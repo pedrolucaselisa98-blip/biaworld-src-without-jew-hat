@@ -764,27 +764,6 @@ async function clipboard(text) {
                             },
                             {
                                 type: 0,
-                                name: "Notice Bulge",
-                                callback: (passthrough)=>{
-                                    socket.emit("command", {command: "owo", param: passthrough.pub.name})
-                                }
-                            },
-                            {
-                                type: 0,
-                                name: "Pastule",
-                                callback: (passthrough)=>{
-                                    socket.emit("talk", passthrough.pub.name+" stop being a pastule.")
-                                }
-                            },
-                            {
-                                type: 0,
-                                name: settings.under ? "BLOCKED" : "Niggerify",
-                                callback: (passthrough)=>{
-                                    socket.emit("talk", passthrough.pub.name+" hey guess what, you're a nigger!")
-                                }
-                            },
-                            {
-                                type: 0,
                                 name: "Ask to KYS",
                                 callback: (passthrough)=>{
                                     socket.emit("talk", passthrough.pub.name+"(don't) kill yourself" + (Math.random()>0.5 ? " like a tranny." : " NOW!"));
@@ -819,14 +798,6 @@ async function clipboard(text) {
                                     useredit.name = passthrough.pub.name;
                                     useredit.id = passthrough.id;
                                     showUserEdit();
-                                }
-                            },
-                            {
-                                type: 0,
-                                name: "Nuke",
-                                disabled: level <= 1,
-                                callback: (passthrough)=>{
-                                    socket.emit("command", {command: "nuke", param: passthrough.id})
                                 }
                             },
                         ]
